@@ -1,5 +1,6 @@
 body{
     background: black;
+    text-align: center;
 }
 #homeBody{
     height: 100vh;
@@ -14,8 +15,12 @@ body{
     align-items: center;
 }
 .cols{
-
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    background: white;
+    border-radius: 50px;
 }
 .rows{
-    
+    background: yellow;
 }
