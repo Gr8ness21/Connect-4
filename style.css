@@ -3,8 +3,16 @@ html, body{
     text-align: center;
     padding: 0;
     margin: 0;
-    color: white;
 }
+#connect4{
+    height: 75vh;
+    width: 75vw;
+    background: blue;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding: 0;
+}
+
 .start{
     height: 100vh;
     width: 100vw;
@@ -17,10 +25,6 @@ html, body{
     align-content: center;
     align-items: center;
 }
-a:link{
-    text-decoration: none;
-    color: white inherit;
-}
 
 .startButton{
     height: 100vh;
@@ -29,12 +33,13 @@ a:link{
 }
 
 
-.cols{
-    height: 70px;
-    width: 70px;
+.column{
+    height: 80px;
+    width: 80px;
     display: inline-block;
     background: white;
     border-radius: 50px;
+    margin: 5px
 }
 .rows{
     background: yellow;
