@@ -17,7 +17,7 @@ class Connect4 {
         this.selector = selector;
         this.Rows = 6;
         this.Cols = 7;
-        this.player = "player1";
+        this.player = "yellow";
         this.buildGrid();
         this.allEventListeners();
     };
@@ -64,11 +64,11 @@ class Connect4 {
         $game.on('mouseover', '.empty.column', function () {
             const col = $(this).data("column");
             const $emptyBottomSpot = findAvailableSpot(col);
-            $emptyBottomSpot.addClass(`player1`);
+            $emptyBottomSpot.addClass(`player${now.player}`);
         });
         //remove placeholder off hover
         $game.on('mouseleave', '.column', function() {
-            $(".column").removeClass(`player1`);
+            $(".column").removeClass(`player${now.player}`);
         });
 
         //drop token on click
@@ -76,10 +76,11 @@ class Connect4 {
             const col = $(this).data("column");
             const $emptyBottomSpot = findAvailableSpot(col);
             $emptyBottomSpot.removeClass("empty");
-            $emptyBottomSpot.addClass("yellow");
+            $emptyBottomSpot.addClass(now.player);
             now.player = (now.player === "yellow") ? "red" : "yellow";
-            //question marks can be used for inline conditional statments
+            //question marks can be used for inline conditional statment
         });
+        
 
     }
 
