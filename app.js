@@ -7,28 +7,28 @@
 // 5. Ask Player for move then try
 // 6. If it works -> check for winner -> if there is a winner end game, record score, switch players.
 let $board = [];
-const playerToken = "p"
+const playerToken = 
 
 $(document).ready(function(){
 // push functions into my established grid. Using "this" will localize commands. Makes jquery more easily readable.
 
 //Build board
 const $board = [
-    ['','','','','','',''],
-    ['','','','','','',''],
-    ['','','','','','',''],
-    ['','','','','','',''],
-    ['','','','','','',''],
-    ['','','','','','','']
+    [{},{},{},{},{},{},{}],
+    [{},{},{},{},{},{},{}],
+    [{},{},{},{},{},{},{}],
+    [{},{},{},{},{},{},{}],
+    [{},{},{},{},{},{},{}],
+    [{},{},{},{},{},{},{}],
     ];
 
 
 //  render board
-// const render = () =>{
-//     const $board = document.getElementById('connect4');
-//     // let doc = ``;
-// }
-// render();
+const render = () =>{
+    const $board = document.getElementById('connect4');
+    // let doc = ``;
+}
+render();
 
 
 //Make columns clickable
@@ -41,17 +41,17 @@ $('.column').click(function(){
     console.log($board);
 });
 
-// function findLastEmptyCell(){
-//     const spots = $(`.column[data-c='${column}']`);
-//     for(let r = spots.length - 1; r>=0; r++){
-//         const $spots = $(spots[r]);
-//         if($spots.hasClass('empty')){
-//             return $spots;
-//             console.log("working")
-//         }
-//     }
-//     return null
-// };
+function findLastEmptyCell(){
+    const spots = $(`.column[data-c='${column}']`);
+    for(let r = spots.length - 1; r>=0; r++){
+        const $spots = $(spots[r]);
+        if($spots.hasClass('empty')){
+            return $spots;
+            console.log("working")
+        }
+    }
+    return null
+};
 
 // $board.on('mouseenter', 'column.empty', function(){
 //     const column = $(this).data('column');
