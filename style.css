@@ -8,6 +8,8 @@ html, body{
     height: 75vh;
     width: 75vw;
     background: blue;
+    border-radius: 20px;
+    border: yellow dashed 5px;
     margin-left: 15%;
     margin-top: 10%;
     padding: 0;

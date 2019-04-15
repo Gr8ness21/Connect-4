@@ -6,25 +6,30 @@
 
 // STEP ONE: CREATE A 6*7 GRID/TABLE
 //Create a class that comands will push to
-class Connect4{
-//using a constructor to create rows and columns,can later be used to incorporate additional functions.
-//selector will call all functions to the ID of connect 4 in the html.
-    constructor(selector){
-    this.selector = selector;
-    this.Rows = 6;
-    this.Cols = 7;
-    this.buildGrid();
+class Connect4 {
+    //using a constructor to create rows and columns,can later be used to incorporate additional functions.
+    //selector will call all functions to the ID of connect 4 in the html.
+    constructor(selector) {
+        this.selector = selector;
+        this.Rows = 6;
+        this.Cols = 7;
+        this.buildGrid();
     };
-//create a function that builds creates divs to serve as grid.
-buildGrid(){
-    const $game = $(this.selector);
-    for(let row = 0; row < this.Rows; row++){
-    const $row = $("<div>")
-    .addClass("row");
-    $game.append($row);
+    //create a function that builds creates divs to serve as grid.
+    buildGrid() {
+        const $game = $(this.selector);
+        for (let row = 0; row < this.Rows; row++) {
+            const $row = $("<div>")
+                .addClass("row");
+            //columns must be nested inside of the rows. for-loop will generate columns.
+            for (let col = 0; col < this.Cols; col++) {
+                const $col = $("<div>")
+                    .addClass("empty column");
+                $row.append($col);
+            }
+            $game.append($row);
+        }
     }
-    console.log($game.html())
-}
 
 
 
@@ -32,10 +37,11 @@ buildGrid(){
 
 
 
-//End of functions
+
+    //End of functions
 };
 
-$(document).ready(function(){
-// STEP ONE: CREATE A 6*7 GRID/TABLE
-const connect4 = new Connect4("#connect4")
+$(document).ready(function () {
+    // STEP ONE: CREATE A 6*7 GRID/TABLE
+    const connect4 = new Connect4("#connect4")
 });
