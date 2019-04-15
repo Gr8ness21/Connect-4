@@ -4,17 +4,21 @@
 // 5. Ask Player for move then try
 // 6. If it works -> check for winner -> if there is a winner end game, record score, switch players.
 
+// STEP ONE: CREATE A 6*7 GRID/TABLE
 //Create a class that comands will push to
 class Connect4{
 //using a constructor to create rows and columns,can later be used to incorporate additional functions.
 //selector will call all functions to the ID of connect 4 in the html.
     constructor(selector){
-    this.rows = 6
-    this.cols = 7
-
-    const $grid = $(selector);
-    $grid.html("working");
+    this.selector = selector;
+    this.rows = 6;
+    this.cols = 7;
+    
     };
+//create a function that builds the grid
+buildGrid(){
+
+}
 
 
 
