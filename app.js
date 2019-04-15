@@ -64,11 +64,11 @@ class Connect4 {
         $game.on('mouseover', '.empty.column', function () {
             const col = $(this).data("column");
             const $emptyBottomSpot = findAvailableSpot(col);
-            $emptyBottomSpot.addClass(`player${now.player}`);
+            $emptyBottomSpot.addClass("yourMove");
         });
         //remove placeholder off hover
         $game.on('mouseleave', '.column', function() {
-            $(".column").removeClass(`player${now.player}`);
+            $(".column").removeClass("yourMove");
         });
 
         //drop token on click
@@ -79,8 +79,8 @@ class Connect4 {
             $emptyBottomSpot.addClass(now.player);
             now.player = (now.player === "yellow") ? "red" : "yellow";
             //question marks can be used for inline conditional statment
+            $(this).trigger('mouseover');
         });
-        
 
     }
 
