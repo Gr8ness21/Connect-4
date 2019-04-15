@@ -11,10 +11,9 @@ class Connect4{
 //selector will call all functions to the ID of connect 4 in the html.
     constructor(selector){
     this.selector = selector;
-    this.buildGrid();
     this.Rows = 6;
     this.Cols = 7;
-    debugger;
+    this.buildGrid();
     };
 //create a function that builds creates divs to serve as grid.
 buildGrid(){
