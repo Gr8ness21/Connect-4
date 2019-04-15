@@ -8,14 +8,26 @@
 // 6. If it works -> check for winner -> if there is a winner end game, record score, switch players.
 $(document).ready(function(){
 // push functions into my established grid. Using "this" will localize commands. Makes jquery more easily readable.
-    const connect4 = new Connect4('#connect4');
-//new grid must have "new" in front of it to work with jquery.
-    console.log("working");
-})
 
-class Connect4{
-    constructor(selector){
-        const $grid = $(selector);
-        document.getElementByID('#connect4');
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
