@@ -44,3 +44,9 @@ html, body{
 .rows{
     background: yellow;
 }
+.player1{
+    background: yellow;
+}
+.player2{
+    background: red;
+}
