@@ -17,6 +17,7 @@ class Connect4 {
         this.selector = selector;
         this.Rows = 6;
         this.Cols = 7;
+        this.player = "player1";
         this.buildGrid();
         this.allEventListeners();
     };
@@ -44,6 +45,8 @@ class Connect4 {
     allEventListeners() {
         //grabbing DOM elements and making them do things!
         const $game = $(this.selector);
+        const now = this;
+        //used when needing to make specific changes locally, an indicator like "now" or "that" can be used.
 
         function findAvailableSpot(col){
             const spots = $(`.column[data-column='${col}']`);
@@ -74,6 +77,8 @@ class Connect4 {
             const $emptyBottomSpot = findAvailableSpot(col);
             $emptyBottomSpot.removeClass("empty");
             $emptyBottomSpot.addClass("yellow");
+            now.player = (now.player === "yellow") ? "red" : "yellow";
+            //question marks can be used for inline conditional statments
         });
 
     }
