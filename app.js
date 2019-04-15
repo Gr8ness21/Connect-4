@@ -11,13 +11,20 @@ class Connect4{
 //selector will call all functions to the ID of connect 4 in the html.
     constructor(selector){
     this.selector = selector;
-    this.rows = 6;
-    this.cols = 7;
-    
+    this.buildGrid();
+    this.Rows = 6;
+    this.Cols = 7;
+    debugger;
     };
-//create a function that builds the grid
+//create a function that builds creates divs to serve as grid.
 buildGrid(){
-
+    const $game = $(this.selector);
+    for(let row = 0; row < this.Rows; row++){
+    const $row = $("<div>")
+    .addClass("row");
+    $game.append($row);
+    }
+    console.log($game.html())
 }
 
 
