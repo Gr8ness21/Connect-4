@@ -47,12 +47,13 @@ class Connect4 {
 
         function findAvailableSpot(col){
             const spots = $(`.column[data-column='${col}']`);
-            for(let c = spots.length - 1; c >= 0; c++){
+            for(let c = spots.length - 1; c >= 0; c--){
                 const $spots = $(spots[c]);
                 if ($spots.hasClass("empty")){
                     return $spots;
                 }
             }
+            return null;
         }
 
         //in order to identify specific spots in the grid, I have to add values or coordinates to empty spots.
