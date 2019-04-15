@@ -28,6 +28,9 @@ Users can take turn playing game pieces.
 ## Whiteboard Images
 *can be found in project Images folder
 
+## Trello Planning
+* https://trello.com/b/2jeHdFcV/project-1-connect-4
+
 ## <a name="design"></a>Design
 * Design elements implemented using HTML5 and CSS3. 
 
