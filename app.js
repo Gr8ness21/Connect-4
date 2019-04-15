@@ -85,6 +85,9 @@ class Connect4 {
     }
 
     //STEP THREE: Check for wins
+// Check for diagnal wins
+// Check for Vertical Wins
+// Check for Horizontal Wins
 
 
 
