@@ -14,7 +14,9 @@ class Connect4 {
         this.Rows = 6;
         this.Cols = 7;
         this.buildGrid();
+        this.allEventListeners();
     };
+
     //create a function that builds creates divs to serve as grid.
     buildGrid() {
         const $game = $(this.selector);
@@ -31,7 +33,17 @@ class Connect4 {
         }
     }
 
+    //STEP TWO: Create Event Listeners - token drop, player two piece, hover over column, etc.
 
+    allEventListeners() {
+        //grabbing DOM elements and making them do things!
+        const $game = $(this.selector);
+        //in order to identify specific spots in the grid, I have to add values or coordinates to empty spots.
+        $game.on('mouseover', '.empty.column', function () {
+            
+        })
+
+    }
 
 
 

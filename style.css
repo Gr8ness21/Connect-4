@@ -1,17 +1,22 @@
 html, body{
     background: black;
+    color: white;
     text-align: center;
     padding: 0;
     margin: 0;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
 }
 #connect4{
     height: 75vh;
     width: 75vw;
     background: blue;
     border-radius: 20px;
-    border: yellow dashed 5px;
+    border: yellow solid 5px;
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 0;
 }
 
@@ -40,13 +45,12 @@ html, body{
     height: 80px;
     width: 80px;
     display: inline-block;
+    border: yellow solid 4px;
     background: white;
     border-radius: 50px;
     margin: 5px
 }
-/* .rows{
-    background: yellow;
-} */
+
 .player1{
     background: yellow;
 }
