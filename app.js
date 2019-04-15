@@ -89,6 +89,7 @@ class Connect4 {
 // Check for Vertical Wins
 // Check for Horizontal Wins
 
+// Trigger modal pop up that fills screen with option to refresh page and start a new round
 
 
 
