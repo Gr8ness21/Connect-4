@@ -54,6 +54,16 @@ h1{
 .player1{
     background: rgba(255, 255, 0, 0.80)
 }
+.yellow{
+    background: yellow;
+    /* background: url("/Images/yellowTokenGif.gif"); */
+    /* background-repeat: no-repeat; */
+}
 .player2{
+    background: rgba(255, 0, 0, 0.80);
+}
+.red{
     background: red;
+    /* background: url("/Images/redTokenGif.gif"); */
+    /* background-repeat: no-repeat; */
 }

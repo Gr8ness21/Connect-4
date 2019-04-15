@@ -56,15 +56,24 @@ class Connect4 {
         }
 
         //in order to identify specific spots in the grid, I have to add values or coordinates to empty spots.
+        // display place holder on hover
         $game.on('mouseover', '.empty.column', function () {
-            const col = $(this).data('column');
+            const col = $(this).data("column");
             const $emptyBottomSpot = findAvailableSpot(col);
-            $emptyBottomSpot.addClass("player1");
-        })
+            $emptyBottomSpot.addClass(`player1`);
+        });
+        //remove placeholder off hover
+        $game.on('mouseleave', '.column', function() {
+            $(".column").removeClass(`player1`);
+        });
 
-        $game.on('mouseout', '.column', function() {
-            $(".column").removeClass("player1");
-        })
+        //drop token on click
+        $game.on('click', '.empty.column', function (){
+            const col = $(this).data("column");
+            const $emptyBottomSpot = findAvailableSpot(col);
+            $emptyBottomSpot.removeClass("empty");
+            $emptyBottomSpot.addClass("yellow");
+        });
 
     }
 
