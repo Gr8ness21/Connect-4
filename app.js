@@ -84,10 +84,19 @@ class Connect4 {
 
     }
 
+    //STEP THREE: Check for wins
 
 
 
 
+    //// Modal
+// document.getElementById('button').addEventListener('click',function(){
+//     document.querySelector('.modal').style.display='flex';
+// });
+
+// document.querySelector('.close').addEventListener('click',function(){
+//     document.querySelector('.modal').style.display='none';
+// });
 
     //End of functions
 };
