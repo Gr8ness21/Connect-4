@@ -5,6 +5,10 @@
 // 6. If it works -> check for winner -> if there is a winner end game, record score, switch players.
 
 // STEP ONE: CREATE A 6*7 GRID/TABLE
+$(document).ready(function () {
+    // STEP ONE: CREATE A 6*7 GRID/TABLE
+    const connect4 = new Connect4("#connect4")
+});
 //Create a class that comands will push to
 class Connect4 {
     //using a constructor to create rows and columns,can later be used to incorporate additional functions.
@@ -26,7 +30,9 @@ class Connect4 {
             //columns must be nested inside of the rows. for-loop will generate columns.
             for (let col = 0; col < this.Cols; col++) {
                 const $col = $("<div>")
-                    .addClass("empty column");
+                    .addClass("empty column")
+                    .attr("data-column", col)
+                    .attr("data-row", row)
                 $row.append($col);
             }
             $game.append($row);
@@ -40,7 +46,8 @@ class Connect4 {
         const $game = $(this.selector);
         //in order to identify specific spots in the grid, I have to add values or coordinates to empty spots.
         $game.on('mouseover', '.empty.column', function () {
-            
+            const col = $(this).data('column');
+            console.log(col);
         })
 
     }
@@ -53,7 +60,7 @@ class Connect4 {
     //End of functions
 };
 
-$(document).ready(function () {
-    // STEP ONE: CREATE A 6*7 GRID/TABLE
-    const connect4 = new Connect4("#connect4")
-});
+// $(document).ready(function () {
+//     // STEP ONE: CREATE A 6*7 GRID/TABLE
+//     const connect4 = new Connect4("#connect4")
+// });
