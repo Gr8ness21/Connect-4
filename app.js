@@ -44,10 +44,22 @@ class Connect4 {
     allEventListeners() {
         //grabbing DOM elements and making them do things!
         const $game = $(this.selector);
+
+        function findAvailableSpot(col){
+            const spots = $(`.column[data-column='${col}']`);
+            for(let c = spots.length - 1; c >= 0; c++){
+                const $spots = $(spots[c]);
+                if ($spots.hasClass("empty")){
+                    return $spots;
+                }
+            }
+        }
+
         //in order to identify specific spots in the grid, I have to add values or coordinates to empty spots.
         $game.on('mouseover', '.empty.column', function () {
             const col = $(this).data('column');
-            console.log(col);
+            const $emptyBottomSpot = findAvailableSpot(col);
+            $emptyBottomSpot.addClass(`player1`);
         })
 
     }

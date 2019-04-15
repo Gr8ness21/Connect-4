@@ -52,7 +52,7 @@ h1{
 }
 
 .player1{
-    background: yellow;
+    background: rgba(255, 255, 0, 0.80)
 }
 .player2{
     background: red;
