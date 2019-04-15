@@ -59,7 +59,11 @@ class Connect4 {
         $game.on('mouseover', '.empty.column', function () {
             const col = $(this).data('column');
             const $emptyBottomSpot = findAvailableSpot(col);
-            $emptyBottomSpot.addClass(`player1`);
+            $emptyBottomSpot.addClass("player1");
+        })
+
+        $game.on('mouseout', '.column', function() {
+            $(".column").removeClass("player1");
         })
 
     }
