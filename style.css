@@ -1,5 +1,6 @@
 html, body{
-    background: black;
+    background: url("/Images/blueBackgroundHD.jpg");
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 0;
@@ -17,9 +18,9 @@ h4{
 #connect4{
     height: 75vh;
     width: 75vw;
-    background: blue;
+    background: rgba(255, 255, 255, 0);
     border-radius: 20px;
-    border: yellow solid 5px;
+    border: yellow double 5px;
     margin-left: 15%;
     margin-top: 5%;
     padding: 0;
@@ -50,8 +51,8 @@ h4{
     height: 80px;
     width: 80px;
     display: inline-block;
-    border: black solid 4px;
-    background: white;
+    border: white solid 4px;
+    background: rgba(255, 255, 255, 0.644);
     border-radius: 50px;
     margin: 5px
 }
@@ -60,7 +61,7 @@ h4{
     cursor: pointer;
 }
 .yourMove{
-    background: gray;
+    background: rgba(128, 128, 128, 0.336);
 }
 .player1{
     background: rgba(255, 255, 0, 0.80);
