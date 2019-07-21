@@ -47,6 +47,7 @@ Users can take turn playing game pieces.
 
 * You can view the repository:
 [Github.com](https://github.com/Gr8ness21/Connect-4)
+* If unable to view please go live locally through VS Code
     
 ## Works Cited:
 *https://stackoverflow.com/questions/24093290/what-does-the-question-mark-mean-in-javascript/24093304
