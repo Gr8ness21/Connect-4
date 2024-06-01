@@ -3,6 +3,8 @@
 #### A full-stack web application built as first project.
 <img src="./Images/homeBackground.jpeg" alt="Connect Four Mainpage Screenshot"/>
 
+<img src="./Images/Paul Chapman's Video - Jun 1, 2024.gif" alt="Connect Four Video"/>
+
 ## Description
 Connect Four: a two player connection game. First player to get four of the same colored checkers in a row either horizontally, vertically or diagonally wins.
 
