@@ -43,7 +43,7 @@ Users can take turn playing game pieces.
 * Users can change the theme.
 
 ## <a name="deployment"></a>Deployed Link
-[Netlify](https://wonderful-brahmagupta-6a75d3.netlify.com)
+[Netlify]([https://wonderful-brahmagupta-6a75d3.netlify.com](https://connect4pc.netlify.app/))
 
 * You can view the repository:
 [Github.com](https://github.com/Gr8ness21/Connect-4)
